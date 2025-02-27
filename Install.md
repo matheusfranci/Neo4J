@@ -90,8 +90,9 @@ No primeiro login, o Neo4j solicitará a alteração da senha por segurança. Ba
 Verificar a Versão do Neo4j
 Execute o seguinte comando dentro do cypher-shell para verificar a versão instalada:
 
-
-## CALL dbms.components();
+```bash
+CALL dbms.components();
+```
 Listar os Bancos de Dados Existentes
 Para verificar os bancos de dados disponíveis, execute:
 
