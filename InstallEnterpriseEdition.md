@@ -53,6 +53,11 @@ neo4j-admin server license --accept-evaluation
 ```
 Isso libera o uso da versão Enterprise conforme o tipo de licença escolhido.
 
+## 3.1. Em caso de erro pelo java estar na versão errada basta selecionar a versão 17
+```bash
+sudo update-alternatives --config java
+```
+
 ## 4. Executar o Neo4j
 Defina a variável de ambiente NEO4J_HOME, apontando para o diretório onde o Neo4j foi extraído:
 
