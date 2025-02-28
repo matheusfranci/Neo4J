@@ -40,6 +40,17 @@ cd neo4j-enterprise-5.5.0
 ## 3. Aceitar o Contrato de Licença (apenas para Enterprise Edition)
 Se estiver utilizando a versão Enterprise, é necessário aceitar os termos da licença antes de iniciar o serviço.
 
+Defina a variável de ambiente NEO4J_HOME, apontando para o diretório onde o Neo4j foi extraído:
+
+```bash
+export NEO4J_HOME=~/neo4j-enterprise-5.5.0
+```
+Isso informa ao sistema onde está localizada a instalação do Neo4j.
+
+Agora, adicione o diretório bin do Neo4j ao PATH do sistema, para poder executar comandos do Neo4j sem precisar especificar o caminho completo:
+```bash
+export PATH=$NEO4J_HOME/bin:$PATH
+```
 Para aceitar a licença comercial:
 
 ```bash
@@ -59,19 +70,6 @@ sudo update-alternatives --config java
 ```
 
 ## 4. Executar o Neo4j
-Defina a variável de ambiente NEO4J_HOME, apontando para o diretório onde o Neo4j foi extraído:
-
-```bash
-export NEO4J_HOME=~/neo4j-enterprise-5.5.0
-```
-Isso informa ao sistema onde está localizada a instalação do Neo4j.
-
-Agora, adicione o diretório bin do Neo4j ao PATH do sistema, para poder executar comandos do Neo4j sem precisar especificar o caminho completo:
-```bash
-export PATH=$NEO4J_HOME/bin:$PATH
-```
-
-Isso facilita o uso do Neo4j, permitindo que comandos como neo4j start sejam executados diretamente.
 
 Finalmente, inicie o servidor do Neo4j:
 ```bash
