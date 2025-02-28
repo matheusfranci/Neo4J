@@ -1,4 +1,4 @@
-# Instalação do Neo4j no Raspberry Pi
+# Instalação do Neo4j
 
 ## 1. Instalar o Java
 
